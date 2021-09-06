@@ -9,8 +9,7 @@ Aqui esta uma lista das funcionalidades que esse projeto tem para aprendizado.
 
 * Criação de cadastro de usuários
 * Criação de um CRUD para o gerencimento de livros que esta lendo. (pode consultar no *localhost:3000/meuslivros*)
-
-
+* Implementação do Docker
 
 * ...
 
