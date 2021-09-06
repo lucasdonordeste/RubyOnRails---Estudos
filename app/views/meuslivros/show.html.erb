@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome do livro:</strong>
+  <%= @meuslivro.nomedolivro %>
+</p>
+
+<p>
+  <strong>Resumo:</strong>
+  <%= @meuslivro.resumo %>
+</p>
+
+<p>
+  <strong>Data de inicio:</strong>
+  <%= @meuslivro.datadeinicio %>
+</p>
+
+<p>
+  <strong>Data de termino:</strong>
+  <%= @meuslivro.datedetermino %>
+</p>
+
+<%= link_to 'Editar', edit_meuslivro_path(@meuslivro) %> |
+<%= link_to 'Voltar', meuslivros_path %>

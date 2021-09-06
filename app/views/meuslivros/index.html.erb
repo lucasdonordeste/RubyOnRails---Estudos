@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Meus livros</h1>
+
+
+
+
+
+
+
+    <table style="border: 2px solid">
+      <% @meuslivros.each do |meuslivro| %>
+      <thead>
+      <tr>
+        <th>Nome do livro</th>
+        <th>&nbsp;</th>
+        <th>Resumo</th>
+        <th>Data de inicio</th>
+        <th>&nbsp;</th>
+        <th>Data de termino</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><%= meuslivro.nomedolivro %></td>
+        <th>&nbsp;</th>
+        <td><%= meuslivro.resumo %></td>
+        <td><%= meuslivro.datadeinicio %></td>
+        <th>&nbsp;</th>
+        <td><%= meuslivro.datedetermino %></td>
+      </tr>
+      </tbody>
+      <tr>
+
+        <td><%= link_to 'Ver', meuslivro %></td>
+        <td><%= link_to 'Editar', edit_meuslivro_path(meuslivro) %></td>
+        <td><%= link_to 'Apagar', meuslivro, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+
+    <% end %>
+    </table>
+
+
+<br>
+
+<%= link_to 'Cadastrar novo livro', new_meuslivro_path %>

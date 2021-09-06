@@ -1,0 +1,38 @@
+<%= form_for(meuslivro) do |f| %>
+  <% if meuslivro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meuslivro.errors.count, "error") %> prohibited this meuslivro from being saved:</h2>
+
+      <ul>
+      <% meuslivro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <h5>Nome do Livro</h5>
+    <%= f.text_field :nomedolivro %>
+  </div>
+
+  <div class="field">
+    <h5>Resumo</h5>
+    <%= f.text_area :resumo %>
+  </div>
+
+  <div class="field">
+    <h5>Data de inicio</h5>
+    <%= f.date_select :datadeinicio %>
+  </div>
+
+  <div class="field">
+    <h5>Data de termino</h5>
+    <%= f.date_select :datedetermino %>
+  </div>
+
+  <div class="actions">
+    <h5>botao</h5>
+    <%= f.submit 'Adicionar Novo Livro' %>
+  </div>
+<% end %>

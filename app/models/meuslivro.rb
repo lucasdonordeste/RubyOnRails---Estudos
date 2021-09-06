@@ -1,0 +1,2 @@
+class Meuslivro < ApplicationRecord
+end
