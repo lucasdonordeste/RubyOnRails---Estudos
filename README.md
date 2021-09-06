@@ -15,3 +15,4 @@ Aqui esta uma lista das funcionalidades que esse projeto tem para aprendizado.
 * ...
 
 #### Atualizações semanais em novos estudos.
+
