@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomedolivro: MyString
+  resumo: MyText
+  datadeinicio: 2021-09-05
+  datedetermino: 2021-09-05
+
+two:
+  nomedolivro: MyString
+  resumo: MyText
+  datadeinicio: 2021-09-05
+  datedetermino: 2021-09-05
